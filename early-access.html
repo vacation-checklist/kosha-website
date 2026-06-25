@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Early access — Kosha</title>
+  <meta name="description" content="Join the Kosha early-access list and help shape a private app for your family's documents and stories." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Kosha" />
+  <meta property="og:title" content="Help shape Kosha — and be first in" />
+  <meta property="og:description" content="We're opening early access in small groups. No payment, no commitment — just first access and a real say in what we build." />
+  <meta property="og:url" content="https://kosha.family/early-access" />
+  <meta property="og:image" content="https://kosha.family/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1310179881183647');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1310179881183647&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect x='8' y='8' width='48' height='48' rx='10' fill='%231F4E79'/><circle cx='32' cy='32' r='19' fill='none' stroke='%23C9A84C' stroke-width='1.6' opacity='0.45'/><circle cx='32' cy='32' r='13' fill='none' stroke='%23C9A84C' stroke-width='1.6' opacity='0.7'/><text x='32' y='41' font-family='Georgia,serif' font-size='26' font-weight='600' fill='%23C9A84C' text-anchor='middle'>K</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <a class="logo" href="/">KOSHA</a>
+  <div class="nav-tagline">A treasury for your family</div>
+  <div class="nav-links">
+    <a href="/">Home</a>
+    <a href="/why-kosha">Why “Kosha”</a>
+    <a href="/privacy">Privacy &amp; security</a>
+    <a href="/early-access" class="cta active">Get early access</a>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="site-header">
+    <div class="eyebrow">Early access</div>
+    <h1>Help shape Kosha — and be <em>first in</em></h1>
+    <p>We're opening early access in small groups. Tell us a little about what you'd keep in your kosha, and we'll save your place. No payment, no commitment — just first access and a real say in what we build.</p>
+  </header>
+
+  <section class="section">
+    <!-- FORM BACKEND: replace action with your Formspree/endpoint URL before launch.
+         Until then, submissions are captured via the JS handler below into a mailto fallback. -->
+    <form class="form-card" id="ea-form" action="https://formspree.io/f/xvznvavq" method="POST">
+      <!-- Formspree: set redirect to https://kosha.family/thanks (paid plans use the dashboard "Redirect" setting;
+           the _next field below also works). The /thanks page fires the pixel Lead event = campaign conversion. -->
+      <input type="hidden" name="_next" value="https://kosha.family/thanks" />
+      <div class="form-row">
+        <label for="name">First name</label>
+        <input type="text" id="name" name="name" autocomplete="given-name" required />
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" autocomplete="email" required />
+      </div>
+      <div class="form-row">
+        <label>What would you want your kosha to hold? <span style="font-weight:400;color:var(--text-light);">(choose any)</span></label>
+        <label class="check-row"><input type="checkbox" name="hold[]" value="emergency_contacts" /><span>Emergency &amp; medical contacts</span></label>
+        <label class="check-row"><input type="checkbox" name="hold[]" value="insurance_accounts" /><span>Insurance policies &amp; account info</span></label>
+        <label class="check-row"><input type="checkbox" name="hold[]" value="id_photos" /><span>Photos of IDs (license, passport, health card)</span></label>
+        <label class="check-row"><input type="checkbox" name="hold[]" value="document_locations" /><span>Where key documents are kept (will, deeds, etc.)</span></label>
+        <label class="check-row"><input type="checkbox" name="hold[]" value="financial_details" /><span>Financial &amp; investment account details</span></label>
+        <label class="check-row"><input type="checkbox" name="hold[]" value="stories" /><span>Family stories, letters &amp; voice recordings</span></label>
+        <label class="check-row"><input type="checkbox" id="hold-all" /><span>All of the above</span></label>
+      </div>
+      <div class="form-row">
+        <label>Who would you mainly use it for?</label>
+        <label class="check-row"><input type="radio" name="for_whom" value="self" /><span>Myself / my household</span></label>
+        <label class="check-row"><input type="radio" name="for_whom" value="parents" /><span>My aging parents</span></label>
+        <label class="check-row"><input type="radio" name="for_whom" value="both" /><span>Both</span></label>
+      </div>
+      <label class="check-row" style="margin-top:6px;">
+        <input type="checkbox" name="consent" value="yes" required />
+        <span class="consent" style="margin-top:0;">Yes, email me about my early access — when my group opens, and what I helped shape. Nothing else.</span>
+      </label>
+      <div class="btn-row" style="margin-top:22px;">
+        <button class="btn btn-primary" type="submit">Save my place</button>
+      </div>
+      <p class="consent">Only early-access emails. No newsletters, no promotions, no sharing — ever. Unsubscribe anytime. See <a href="/privacy" style="color:var(--navy);">privacy &amp; security</a>.</p>
+    </form>
+    <p class="muted" id="ea-thanks" style="display:none; margin-top:24px; font-size:1rem;">You're on the list — thank you.</p>
+  </section>
+
+  <script>
+    // Lead conversion fires once on /thanks (the post-submit redirect), not here,
+    // to avoid double-counting. See thanks.html.
+
+    // "All of the above" toggles every "hold" option
+    (function () {
+      var all = document.getElementById('hold-all');
+      var opts = document.querySelectorAll('input[name="hold[]"]');
+      all.addEventListener('change', function () {
+        opts.forEach(function (o) { o.checked = all.checked; });
+      });
+      opts.forEach(function (o) {
+        o.addEventListener('change', function () {
+          all.checked = Array.prototype.every.call(opts, function (x) { return x.checked; });
+        });
+      });
+    })();
+  </script>
+
+</div>
+
+<footer>
+  <div class="f-logo">KOSHA</div>
+ 

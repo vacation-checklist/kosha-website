@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /tools
+Disallow: /tools/
+Disallow: /thanks
+
+Sitemap: https://kosha.family/sitemap.xml
