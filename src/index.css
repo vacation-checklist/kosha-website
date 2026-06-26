@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-inter text-text bg-white;
+  }
+
+  h1 {
+    @apply font-garamond font-medium text-navy;
+  }
+
+  h2 {
+    @apply font-garamond text-2xl font-medium text-navy;
+  }
+
+  h3 {
+    @apply font-garamond text-xl font-semibold text-navy;
+  }
+
+  em {
+    @apply italic text-gold;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply text-xs font-semibold tracking-widest uppercase text-gold;
+  }
+
+  .section-label {
+    @apply text-xs font-semibold tracking-wide uppercase text-gold;
+  }
+
+  .btn {
+    @apply inline-block font-semibold text-sm rounded-md px-6 py-3 transition-colors duration-200 no-underline cursor-pointer border-none;
+  }
+
+  .btn-primary {
+    @apply bg-navy text-white hover:bg-navy-dark;
+  }
+
+  .btn-ghost {
+    @apply bg-transparent text-navy border-2 border-cream-dark hover:border-gold;
+  }
+
+  .btn-gold {
+    @apply bg-gold text-white hover:bg-gold-dark;
+  }
+
+  .form-card {
+    @apply bg-cream border border-cream-dark rounded-lg p-8 mt-7;
+  }
+
+  .form-row {
+    @apply mb-5;
+  }
+
+  .form-row label {
+    @apply block text-sm font-semibold text-navy mb-2;
+  }
+
+  .form-row input[type="text"],
+  .form-row input[type="email"] {
+    @apply w-full border border-cream-dark rounded-md px-3 py-2;
+  }
+
+  .check-row {
+    @apply text-base text-text font-normal;
+  }
+
+  .check-row input[type="checkbox"],
+  .check-row input[type="radio"] {
+    @apply mr-2;
+  }
+
+  .step {
+    @apply flex gap-5 items-start;
+  }
+
+  .step-num {
+    @apply flex items-center justify-center w-10 h-10 border-2 border-gold rounded-full font-garamond text-lg text-gold flex-shrink-0;
+  }
+
+  .card {
+    @apply bg-cream border border-cream-dark rounded-lg p-7;
+  }
+
+  .card.navy {
+    @apply bg-navy border-navy;
+  }
+
+  .card.navy h3 {
+    @apply text-gold;
+  }
+
+  .card.navy p {
+    @apply text-blue-100 text-sm;
+  }
+}
