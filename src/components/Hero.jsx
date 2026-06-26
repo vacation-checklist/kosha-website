@@ -1,93 +1,4 @@
-{/*
-import { useState } from "react";
 
-export default function Hero() {
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (!email.trim()) {
-      alert("Please enter your email address.");
-      return;
-    }
-
-    localStorage.setItem("vacationEmail", email);
-
-    window.location.href = "/vacation/form";
-  };
-
-  return (
-    <section className="bg-[#1F4E79] relative overflow-hidden">
-      <div className="max-w-5xl mx-auto px-6 py-24 text-center text-white">
-        <p className="text-[#C9A84C] font-semibold tracking-wider text-sm">
-          FREE CHECKLIST · TAKES 3 MINUTES
-        </p>
-
-        <h1 className="mt-4 text-5xl font-bold">
-          Your trip is planned.
-          <br />
-          Is everything else?
-        </h1>
-
-        <p className="mt-4 text-lg opacity-90">
-          Get a personalized pre-vacation checklist emailed as a printable PDF.
-        </p>
-
-        <form
-          onSubmit={handleSubmit}
-          className="mt-8 flex flex-col md:flex-row justify-center items-center gap-3 md:gap-0"
-        >
-          <input
-            type="email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="your@email.com"
-            className="
-              px-5
-              py-4
-              w-full
-              md:w-[420px]
-              rounded-lg
-              md:rounded-l-lg
-              md:rounded-r-none
-              text-black
-              outline-none
-            "
-          />
-
-          <button
-            type="submit"
-            className="
-              bg-[#C9A84C]
-              px-8
-              py-4
-              font-semibold
-              text-black
-              rounded-lg
-              md:rounded-l-none
-              md:rounded-r-lg
-              hover:opacity-90
-              transition
-            "
-          >
-            Get My Free Checklist →
-          </button>
-        </form>
-
-        <p className="mt-5 text-sm opacity-75">
-          Free. No account needed. Unsubscribe anytime.
-        </p>
-      </div>
-
-      <svg viewBox="0 0 1440 120" className="block w-full">
-        <path fill="#FAF7F0" d="M0,0 L1440,120 L1440,120 L0,120 Z" />
-      </svg>
-    </section>
-  );
-}
-*/}
 
 import { useState } from "react";
 import "../styles/hero.css";
@@ -140,12 +51,12 @@ export default function Hero() {
         </h1>
 
         <p>
-          Get a personalized pre-vacation
-          checklist emailed as a printable PDF.
+          Answer a few quick questions and get a personalized,
+          printable pre-trip checklist instantly.
         </p>
 
         <small className="hero-note">
-          Free. No account needed. Unsubscribe anytime.
+          Free. No account needed. Print it or save the PDF.
         </small>
 
         <form
@@ -162,7 +73,7 @@ export default function Hero() {
           />
 
           <button type="submit">
-            Get My Free Checklist →
+            Build My Checklist →
           </button>
         </form>
 

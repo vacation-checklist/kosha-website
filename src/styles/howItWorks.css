@@ -1,0 +1,103 @@
+.how-it-works {
+  padding: 48px 24px;
+  background: #FDFBF8;
+}
+
+.how-container {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+}
+
+.section-tag {
+  font-family: "Inter", sans-serif;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #C9A84C;
+  margin-bottom: 18px;
+}
+
+.how-it-works h2 {
+  margin-top: 12px;
+  margin-bottom: 36px;
+
+  font-family: "EB Garamond", serif;
+  font-size: 2.4rem;       /* reduced */
+  font-weight: 500;
+  color: #163B67;
+}
+
+.step {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.step-circle {
+  width: 42px;
+  height: 42px;
+
+  border: 2px solid #C9A84C;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #C9A84C;
+  font-family: "EB Garamond", serif;
+  font-size: 1.2rem;
+
+  flex-shrink: 0;
+}
+
+.step-content h3 {
+  color: #163B67;
+  font-family: "EB Garamond", serif;
+  font-size: 1.5rem;      /* reduced */
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.step-content p {
+  color: #5E6670;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;     /* reduced */
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+@media (max-width: 768px) {
+
+  .how-it-works h2 {
+    font-size: 2rem;
+  }
+
+  .step {
+    gap: 18px;
+  }
+
+  .step-circle {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+  }
+
+  .step-content h3 {
+    font-size: 1.25rem;
+  }
+
+  .step-content p {
+    font-size: 0.9rem;
+  }
+}
+
+.steps-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 60px;
+}
