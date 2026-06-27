@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 export default function PrivacyPage() {
   return (
@@ -11,7 +11,9 @@ export default function PrivacyPage() {
             Plain answers about <em>your</em> information
           </h1>
           <p className="text-lg text-text-light leading-relaxed">
-            You're considering trusting us with the most sensitive information your family has. You deserve answers in plain language, not a wall of legal text. Here they are.
+            You're considering trusting us with the most sensitive information
+            your family has. You deserve answers in plain language, not a wall
+            of legal text. Here they are.
           </p>
         </div>
       </section>
@@ -25,10 +27,16 @@ export default function PrivacyPage() {
           </h2>
           <div className="space-y-4 text-text leading-relaxed">
             <p>
-              A kosha is private by default. While you're filling yours in — whether that takes a weekend or a year — nobody else can see it. Not your spouse, not your children, not us. There is no shared family view until you create one.
+              A kosha is private by default. While you're filling yours in —
+              whether that takes a weekend or a year — nobody else can see it.
+              Not your spouse, not your children, not us. There is no shared
+              family view until you create one.
             </p>
             <p>
-              This matters because we learned it the hard way: people don't want an audience while they organize their lives. Not even a well-meaning one. You work at your own pace, in your own company, and nothing is visible until you deliberately share it.
+              This matters because we learned it the hard way: people don't want
+              an audience while they organize their lives. Not even a
+              well-meaning one. You work at your own pace, in your own company,
+              and nothing is visible until you deliberately share it.
             </p>
           </div>
         </div>
@@ -43,13 +51,24 @@ export default function PrivacyPage() {
           </h2>
           <div className="space-y-4 text-text leading-relaxed">
             <p>
-              Kosha is being built so that your most sensitive fields — government ID numbers, account numbers, and anything else you mark as sealed — are encrypted on your device before they ever reach us. We store the locked box; you hold the key. If someone demanded that data from us, we could not produce it, because we cannot read it.
+              Kosha is being built so that your most sensitive fields —
+              government ID numbers, account numbers, and anything else you mark
+              as sealed — are encrypted on your device before they ever reach
+              us. We store the locked box; you hold the key. If someone demanded
+              that data from us, we could not produce it, because we cannot read
+              it.
             </p>
             <p>
-              Everything else — the structure of your kosha, your story recordings, your contact lists — is encrypted in transit and at rest.
+              Everything else — the structure of your kosha, your story
+              recordings, your contact lists — is encrypted in transit and at
+              rest.
             </p>
             <p className="text-text-light text-sm italic">
-              One honest consequence: because we can't read sealed fields, we also can't recover them if you lose both your password and your recovery code. We'll make the recovery code hard to lose. Keep it somewhere safe — perhaps the same drawer the binder used to live in.
+              One honest consequence: because we can't read sealed fields, we
+              also can't recover them if you lose both your password and your
+              recovery code. We'll make the recovery code hard to lose. Keep it
+              somewhere safe — perhaps the same drawer the binder used to live
+              in.
             </p>
           </div>
         </div>
@@ -64,10 +83,17 @@ export default function PrivacyPage() {
           </h2>
           <div className="space-y-4 text-text leading-relaxed">
             <p>
-              When you're ready, you grant access layer by layer: emergency contacts to your whole family today; documents to one trusted person; letters and recordings held back until a date, an event, or a decision you make later. Every grant is explicit, visible to you, and revocable.
+              When you're ready, you grant access layer by layer: emergency
+              contacts to your whole family today; documents to one trusted
+              person; letters and recordings held back until a date, an event,
+              or a decision you make later. Every grant is explicit, visible to
+              you, and revocable.
             </p>
             <p>
-              For the day your family truly needs everything, Kosha supports emergency access: a person you designate can request entry, you're notified immediately, and access opens only after a waiting period you set — unless you decline. No quiet backdoors, no surprises.
+              For the day your family truly needs everything, Kosha supports
+              emergency access: a person you designate can request entry, you're
+              notified immediately, and access opens only after a waiting period
+              you set — unless you decline. No quiet backdoors, no surprises.
             </p>
           </div>
         </div>
@@ -82,10 +108,16 @@ export default function PrivacyPage() {
           </h2>
           <div className="space-y-4 text-text leading-relaxed">
             <p>
-              Kosha makes money one way: subscriptions. Your data is never sold, never shared with advertisers, never used to market other people's products to you. There are no ads in Kosha and there never will be.
+              Kosha makes money one way: subscriptions. Your data is never sold,
+              never shared with advertisers, never used to market other people's
+              products to you. There are no ads in Kosha and there never will
+              be.
             </p>
             <p>
-              You can export everything you've put in — documents, recordings, text — at any time, in formats you can keep. You can delete your account and your data, permanently, whenever you choose. A vault you can't leave isn't a vault; it's a trap.
+              You can export everything you've put in — documents, recordings,
+              text — at any time, in formats you can keep. You can delete your
+              account and your data, permanently, whenever you choose. A vault
+              you can't leave isn't a vault; it's a trap.
             </p>
           </div>
         </div>
@@ -94,19 +126,31 @@ export default function PrivacyPage() {
       {/* Road Ahead Section */}
       <section className="py-14 px-12 border-b border-cream-dark">
         <div className="max-w-2xl mx-auto">
-          <div className="section-label mb-5">Where we are honest about the road ahead</div>
+          <div className="section-label mb-5">
+            Where we are honest about the road ahead
+          </div>
           <h2 className="font-garamond text-3xl md:text-4xl font-medium text-navy mb-6">
             What's done, and what's in progress
           </h2>
           <div className="space-y-4 text-text leading-relaxed">
             <p>
-              Kosha is in early access, and we'd rather tell you plainly where things stand than imply otherwise. Our infrastructure runs on providers that hold SOC 2 and ISO 27001 attestations. Kosha's own independent SOC 2 examination is planned as we grow — it's the standard we're building to from day one, and early-access members will be the first to know when it's complete.
+              Kosha is in early access, and we'd rather tell you plainly where
+              things stand than imply otherwise. Our infrastructure runs on
+              providers that hold SOC 2 and ISO 27001 attestations. Kosha's own
+              independent SOC 2 examination is planned as we grow — it's the
+              standard we're building to from day one, and early-access members
+              will be the first to know when it's complete.
             </p>
             <p>
-              We follow applicable privacy laws, and we'll always say clearly what we collect and why. Questions we haven't answered here deserve real replies: write to{' '}
-              <a href="mailto:hello@kosha.family" className="text-navy hover:underline">
-                hello@kosha.family
-              </a>{' '}
+              We follow applicable privacy laws, and we'll always say clearly
+              what we collect and why. Questions we haven't answered here
+              deserve real replies: write to{" "}
+              <a
+                href="mailto:earlyaccess@kosha.family"
+                className="text-navy hover:underline"
+              >
+                earlyaccess@kosha.family
+              </a>{" "}
               and a human will respond.
             </p>
           </div>
@@ -131,5 +175,5 @@ export default function PrivacyPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
